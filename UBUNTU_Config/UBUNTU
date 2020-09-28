@@ -21,17 +21,11 @@ cd /etc/init.d
 STEP-7
 sudo vi tomcat8
 
-STEP-8
-cd /etc/init.d
-
-STEP-9 
-sudo vi tomcat9
-
 STEP-10
 #COPY THE SHELL SCRIPT
 
 STEP-11
-sudo chmod 755 tomcat9
+sudo chmod 755 tomcat8
 
 STEP-12
-update-rc.d tomcat7 defaults
+update-rc.d tomcat8 defaults

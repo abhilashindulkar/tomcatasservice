@@ -8,7 +8,7 @@ sudo systemctl status tomcat8
 
 OR
 
-sudo service tomcat status
+sudo service tomcat8 status
 
 ----------Start Tomcat Service--------------
 
@@ -16,7 +16,7 @@ sudo systemctl start tomcat8
 
 OR
 
-sudo service tomcat start
+sudo service tomcat8 start
 
 
 ----------Stop Tomcat Service--------------
@@ -25,7 +25,7 @@ sudo systemctl stop tomcat8
 
 OR
 
-sudo service tomcat stop
+sudo service tomcat8 stop
 
 
 

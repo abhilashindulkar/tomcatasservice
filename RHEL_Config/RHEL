@@ -28,13 +28,13 @@ STEP-8
 STEP-9
 sudo chmod 755 tomcat8
 
-STEP-9
+STEP-10
 sudo chkconfig --add tomcat8
 
-STEP-10
+STEP-11
 sudo chkconfig --level 234 tomcat8 on
 
-STEP-11
+STEP-12
 sudo service tomcat8 start
 sudo chkconfig tomcat8 on
 

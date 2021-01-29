@@ -1,0 +1,25 @@
+[Unit]
+Description=Apache Tomcat Web Application Container
+After=network.target
+
+[Service]
+Type=forking
+
+Environment=JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+Environment=CATALINA_PID=/home/abhilash/apache-tomcat-9.0.36/temp/tomcat.pid
+Environment=CATALINA_HOME=/home/abhilash/apache-tomcat-9.0.36
+Environment=CATALINA_BASE=/home/abhilash/apache-tomcat-9.0.36
+Environment='CATALINA_OPTS=-Xms512M -Xmx2048M -server -XX:+UseParallelGC'
+Environment='JAVA_OPTS=-Djava.awt.headless=true -Djava.security.egd=file:/dev/./urandom'
+
+ExecStart=/home/abhilash/apache-tomcat-9.0.36/bin/startup.sh
+ExecStop=/home/abhilash/apache-tomcat-9.0.36/bin/shutdown.sh
+
+User=abhilash
+Group=abhilash
+UMask=0007
+RestartSec=10
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

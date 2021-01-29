@@ -1,0 +1,13 @@
+Configure Systemd Service
+
+Step1: cd /etc/systemd/system
+
+Step2: sudo vi tomcat9.service
+
+Step3: Paste the content, save and exit
+
+Step4: sudo systemctl daemon-reload
+
+Step5: sudo systemctl enable tomcat9.service
+
+

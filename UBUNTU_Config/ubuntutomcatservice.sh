@@ -1,11 +1,8 @@
 #!/bin/bash
 #
-# Author : subz
-# Copyright (c) 2k15
-#
 # Make kill the tomcat process
 #
-TOMCAT_HOME=/home/ovaledge/apache-tomcat-9.0.36
+TOMCAT_HOME=/home/abhilash/apache-tomcat-9.0.36
 SHUTDOWN_WAIT=5
 
 tomcat_pid() {
